@@ -1,0 +1,214 @@
+AI Job Search Prompt Bank
+Be the Human AI Can’t Replace — Resume & Interview Kits to Stand Out
+Author: Laura Montoya (Accel AI / LatinX in AI / Accel Impact Ventures)
+
+HOW TO USE THIS PROMPT BANK
+- Always define INPUTS (role, company, job description excerpt, your raw bullets, metrics) and OUTPUTS (format, word/char limits, tone).
+- Ask for OPTIONS (3–5 variations) and rationales so you can choose, not just accept.
+- Add CONSTRAINTS (e.g., “<= 26 words”, “metric first”, “ATS-friendly, no tables”).
+- Guard ETHICS: “Use only the facts and numbers I provide. Do not invent details.”
+- Push back when outputs are generic, too long, or inaccurate (see Push-Back Prompts).
+
+SECTION A — RESUME & ATS
+
+A1) Executive Summary (50–60 words)
+You are a hiring manager for <TARGET ROLE> in <INDUSTRY>. Create a 3-line professional summary for my resume that highlights my top 3 spikes, a domain result with a metric, and 1 soft-skill signal (stakeholder or ownership). Limit 50–60 words, human tone, ATS-friendly.
+Inputs: My background (3–5 bullets), target role, top strengths, 1 metric.
+Output: 1 version + 2 alternatives.
+
+A2) Skills Section (Grouped & ATS-Friendly)
+Based on my background (below) and the JD (below), create a Skills section grouped into Languages, Frameworks/Libraries, Tools/Platforms, Cloud/DevOps, Data/ML. Include only skills I actually have; order by relevance to the JD.
+Inputs: Background bullets, JD excerpt.
+Output: Plain-text list, one line per group, no tables.
+
+A3) Bullet Rewrite (Impact-First, <=26 words)
+You are a hiring manager for <TARGET ROLE>. Rewrite each bullet to: (1) start with an action verb, (2) include stakeholder or user, (3) show measurable result (%, $, time), (4) fit <=26 words, (5) ATS-safe. Return 3 options per bullet.
+Inputs: Raw bullets, available metrics, stakeholders.
+Output: 3 variants per bullet, with a 1-line rationale each.
+
+A4) Metric Finder (Quantify Results)
+From the project description below, list 10 quantifiable outcome ideas (%, $, time, error-rate, adoption). For each, note data source (logs, analytics, survey) and a method to estimate quickly if exact data is missing.
+Inputs: Project description.
+Output: Table-like text list.
+
+A5) JD Alignment Map (Skills → Evidence → Gaps)
+From this job description, list key skills/requirements as a table. Map each to my strongest evidence (quote resume text). Then flag my top 3 gaps and propose 1–2 week micro-projects to address each gap.
+Inputs: JD, resume (or resume summary).
+Output: Skills→Evidence→Gap→Sprint plan.
+
+A6) ATS Sanity Check (Plain-Text Export)
+Check the following resume content for ATS risks (columns, text in images, headers, tables, unusual bullets). Provide a plain-text version preserving section order and bold markers (e.g., **text**). List fixes.
+Inputs: Resume text.
+Output: Issues list + plain-text resume.
+
+A7) Tone Adjuster (Confident, Not Boastful)
+Rewrite this section with a tone that is confident, precise, and stakeholder-aware, avoiding buzzwords; keep facts unchanged. Provide 2 versions: “crisp” and “narrative,” 120–160 words.
+Inputs: Section text.
+Output: 2 tone variants.
+
+A8) Resume Versioning (Role-Tailored Variants)
+Create a <ROLE> version of my resume emphasizing <THEMES>. Reorder bullets and skills by relevance to the JD, trimming less-relevant items to fit 1 page.
+Inputs: Base resume, JD, themes.
+Output: 1-page text layout.
+
+SECTION B — PORTFOLIO & PROJECTS
+
+B1) Weekend Project Generator (User-Value Focus)
+Given my background and interests (<LIST>), propose 5 weekend projects that deliver real user value. For each: user, pain, solution, success metric, dataset/tools, and a 3-sentence README outline.
+Inputs: Background + interests.
+Output: 5 projects.
+
+B2) README Builder (Case Study Style)
+Create a README for this project with: Problem, Users & Stakeholders, Approach, Results (metrics/benchmarks), Demo (how to run), Architecture (bullet list), Next Steps, and License. Keep skimmable; <= 500 words.
+Inputs: Project details.
+Output: README text.
+
+B3) Portfolio Case Write-Up (1 Page)
+Turn this project into a one-page case write-up for my website. Include: Context, Problem, My Role, Approach, Results (numbers + quotes), What I’d Do Next. Add a 1-paragraph “Why it mattered.”
+Inputs: Project details.
+Output: 1-pager text.
+
+B4) Replication Study (Paper → Mini Result)
+Suggest a minimal-scope replication of <PAPER/TOPIC> using a tiny dataset. Define objective, dataset, baseline, evaluation metric, 2 ablations, and a results table template I can fill.
+Inputs: Paper/topic.
+Output: Protocol outline.
+
+B5) Impact Inventory (“Impact Bank”)
+From my resume and projects, extract 10 STAR-ready stories. For each: Scenario, Task, Action, Result (with metric), Stakeholder quote (draft), Lesson/Next.
+Inputs: Resume/projects.
+Output: Impact bank list.
+
+SECTION C — OUTREACH & NETWORKING
+
+C1) Warm Intro Message (90–100 words)
+Draft a concise message to <TARGET NAME> at <COMPANY> about <ROLE>. Include one relevant impact from my background, a specific question about their team’s work, and a soft close. No resume attach.
+Inputs: Role, recipient bio, my impact.
+Output: 1 version + 2 alternatives.
+
+C2) Follow-Up (After 5–7 Days)
+Write a polite follow-up referencing a small ship I completed related to their domain. 60–80 words, appreciative tone.
+Inputs: Prior message + micro-win.
+Output: Follow-up note.
+
+C3) Informational Interview Request
+Draft a note to request a 15–20 minute chat. 80–100 words; include 1 thoughtful question about their roadmap or team structure.
+Inputs: Recipient, reason.
+Output: Request note.
+
+C4) Thank-You Note (Post-Chat)
+Write a 70–100 word thank-you that references 1–2 specific takeaways and states 1 next action I’ll take.
+Inputs: Chat notes.
+Output: Thank-you.
+
+SECTION D — INTERVIEW PRACTICE (BEHAVIORAL/TECHNICAL)
+
+D1) STAR Story Crafter (30–45 sec)
+Turn this experience into a concise STAR story for <TARGET ROLE>. Emphasize measurable results and stakeholder value; end with “what I’d do next time.” Limit to 120–150 words.
+Inputs: Experience text.
+Output: STAR story + a 2-bullet talk track.
+
+D2) Behavioral Panel Simulator (Recruiter, HM, Peer)
+Act as (1) Recruiter, (2) Hiring Manager, (3) Peer Engineer. Ask me 10 mixed behavioral/role-fit questions. After each answer I provide, score 1–5 on clarity, impact, concision, and suggest 1 improvement.
+Inputs: Target role, resume.
+Output: Q-by-Q drill with feedback.
+
+D3) Role-Specific Behavioral Bank
+Generate 20 behavioral questions customized for <ROLE> in <INDUSTRY>, grouped by theme (collaboration, conflict, ownership, leadership, ethics). Include 1 model answer outline per question.
+Inputs: Role, industry.
+Output: Question bank.
+
+D4) System Design Socratic Drill
+Simulate a system design interview for <PROBLEM>. Ask clarifying questions, push for trade-offs, note assumptions, require back-of-the-envelope estimates, and provide final feedback rubric.
+Inputs: Problem statement.
+Output: Interactive drill + rubric.
+
+D5) Coding/Algorithm Practice (Language-Specific)
+Create 10 practice problems at easy/medium level matching <LANGUAGE/STACK>. Provide constraints, example I/O, and a short hints section. After I submit code, run test cases conceptually and give complexity analysis.
+Inputs: Language/stack.
+Output: Problem set + feedback protocol.
+
+D6) Questions to Ask Interviewers
+Generate 15 thoughtful questions I can ask a Recruiter, Hiring Manager, and Peer. Focus on team goals, success metrics, collaboration patterns, and how this role creates value in the first 90 days.
+Inputs: JD and company context.
+Output: Question list by interviewer type.
+
+D7) Interview Debrief & Improvement Plan
+Given my notes, extract strengths, gaps, and 3 concrete drills for the next week. Provide an email-sized thank-you note that references 1–2 specifics from the interview.
+Inputs: Debrief notes.
+Output: Plan + thank-you email.
+
+SECTION E — ETHICS & DISCLOSURE
+
+E1) AI Assist Disclosure (When Appropriate)
+Write a one-line disclosure suitable for a portfolio or blog post, e.g., “Drafted and edited with AI; all results and data verified by me.” Offer 3 tone variants.
+Inputs: Context.
+Output: 3 lines.
+
+E2) Confidentiality Guard
+Before using my text, scan for proprietary or sensitive information and list redactions to apply. Then produce a redacted version suitable for AI tools.
+Inputs: Text.
+Output: Redaction plan + safe text.
+
+E3) Source Attribution in Case Studies
+For the write-up below, suggest where citations are needed. Provide a references section in plain text (Author, Title, Year, Link if public).
+Inputs: Write-up draft.
+Output: Citation map + references section.
+
+SECTION F — OFFERS & NEGOTIATION
+
+F1) Comp Research Prep (Role/Level/Geo)
+Create a research checklist for compensation ranges for <ROLE>, level <L>, in <LOCATION>. List sources to consult, what to record (base, equity, bonus, bands), and questions to ask recruiters.
+Inputs: Role, level, location.
+Output: Checklist + table template.
+
+F2) Must-Haves & Tradeoffs
+Based on my priorities, create a one-page decision doc with must-haves, nice-to-haves, walk-away criteria, and trade-offs I’m willing to make (title vs. scope; cash vs. equity).
+Inputs: Priorities.
+Output: Decision doc.
+
+F3) Negotiation Script — Path A (Competitive Offer)
+Draft a concise script: I have another process at ~$X base + Y equity; excited about this role; if we can be competitive at $X here, I’m ready to sign. Include 2 email variants and a phone call talk track.
+Inputs: Target numbers.
+Output: Scripts (email + phone).
+
+F4) Negotiation Script — Path B (Sign-Today Clarity)
+Draft a concise script: I’m ready to sign at $X base, Y equity, Z sign-on. If we can get there, I’ll accept today. Include 2 email variants and a phone call talk track.
+Inputs: Target numbers.
+Output: Scripts (email + phone).
+
+F5) Equity Explainer (Candidate-Friendly)
+Explain my equity offer in plain English: type (ISO/NSO/RSU), vesting schedule, cliffs, refreshers, strike price, tax implications to discuss with a professional, and scenario examples at low/medium/high outcomes.
+Inputs: Offer details.
+Output: 1-page explainer.
+
+F6) Counter-Offer Decision Aid
+Create a pros/cons + risks table for accepting the current offer vs. holding for counter. Include a short recommendation based on my must-haves.
+Inputs: Offer + priorities.
+Output: Decision aid.
+
+SECTION G — PROCESS & CADENCE
+
+G1) Weekly Workflow Planner (One Page)
+Build my weekly cadence: 3 tailored applications, 1 micro-project update, 60–90 minutes interview practice, 3 warm outreaches + 3 follow-ups. Provide a checklist and calendar blocks.
+Inputs: Weekly availability.
+Output: Plan + blocks.
+
+G2) Application Tracker (CSV)
+Produce a CSV header line and 3 sample rows: Company, Role, JD link/date, Contact, Status, Resume version, Next action, Notes, Outcome.
+Inputs: None.
+Output: CSV snippet.
+
+G3) Drop-Off Analysis
+From my tracker, compute conversion rates (Applied→Screen, Screen→Onsite, Onsite→Offer). Suggest 3 experiments to improve the weakest stage.
+Inputs: Tracker data.
+Output: Analysis + experiments.
+
+PUSH-BACK PROMPTS (Use anytime you’re not satisfied)
+- “This is generic. Propose 3 sharper options that foreground stakeholder impact and metrics.”
+- “Too long. Compress to <= 20 words; start with the metric.”
+- “Do not invent facts. Use only the numbers I provided; if missing, propose how to measure them.”
+- “Adjust tone to confident, not boastful. Keep verbs strong; cut adverbs and buzzwords.”
+- “Make it ATS-safe: plain text, simple bullets, no tables/headers/footers.”
+- “Explain your changes in 2 bullets so I can learn your rationale.”
+
+(End of Prompt Bank)

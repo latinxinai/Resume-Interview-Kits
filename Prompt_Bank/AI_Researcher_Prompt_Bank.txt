@@ -1,0 +1,153 @@
+AI Researcher Prompt Bank
+Be the Human AI Can’t Replace — Resume & Interview Kits to Stand Out
+Tailored for: Research Scientist / Applied Scientist (research-leaning) / PhD-track Roles
+
+HOW TO USE
+- Define INPUTS (topic area, JD or CFP, methods, datasets, baselines, your results).
+- Define OUTPUTS (abstract length, figure/table count, tone, citation style).
+- Ask for OPTIONS and rationales; keep novelty claims conservative and evidence-based.
+- Prefer research language (ablations, baselines, SOTA deltas, confidence intervals, error bars, reproducibility).
+
+SECTION A — RESUME/CV & SCHOLAR PROFILES
+
+A1) Research Summary (3 lines, 60–80 words)
+Write a 3-line summary for a Research Scientist applying to <AREA> focusing on problem scope, methods, and one high-signal result (e.g., “+2.3 ROUGE-L on GovReport with 30% less compute”). Mention open-source or data releases if applicable.
+Inputs: area, methods, strongest result. Output: 1 + 2 alts.
+
+A2) Skills/Methods Section (Grouped)
+Group by: Topics (gen modeling, RLHF, causality, safety), Methods (transformers, diffusion, VAEs, GNNs), Optimization (LoRA, PEFT, distillation), Tooling (PyTorch/JAX/DeepSpeed/Accelerate), Data (HF Datasets, Web scrapers), Eval (BLEU/ROUGE/MMLU/BERTScore/FID/AUC), Repro (seeds, DVC, MLflow/W&B).
+Inputs: JD + background. Output: list ordered by relevance.
+
+A3) Publication Bullets (impact-aware)
+Rewrite paper entries with 1–2 impact lines: venue/year, contribution, dataset/scale, delta vs baseline, code/data release, citations if notable.
+Inputs: pubs. Output: revised entries.
+
+A4) Metric Finder (Research)
+From the project below, propose 10 quality metrics (task-appropriate), 5 efficiency metrics (params, FLOPs, GPU hours), and 5 robustness/safety metrics. For each, provide a quick estimation method and caveat.
+Inputs: project. Output: list.
+
+A5) JD/CFP Alignment Map
+Extract required skills or CFP themes; map to my evidence (papers, artifacts). Flag 3 gaps; propose 2-week experiments to address each (replication, ablation, dataset creation).
+Inputs: JD/CFP + CV. Output: table-like text.
+
+A6) ATS/Scholar Sanity
+Produce an ATS-safe one-page resume variant for industry applications, and a Google Scholar/ORCID cleanup plan (consistent name, keywords, links).
+Inputs: CV text. Output: 1-page resume + profile checklist.
+
+SECTION B — RESEARCH ARTIFACTS & WRITING
+
+B1) Related Work Map
+Given my topic, produce a reading list of 15 must-cites grouped by subtopic with 1-line takeaways and known limitations.
+Inputs: topic. Output: map.
+
+B2) Hypothesis & Experiment Plan
+Formulate hypotheses, define baselines, datasets, compute budget, ablations, and a results table template with significance testing guidance.
+Inputs: idea. Output: plan.
+
+B3) Reproducibility Checklist
+Create a checklist: seeds, environment, data versioning, evaluation scripts, variance reporting, artifact release (weights, logs), and license considerations.
+Inputs: project. Output: checklist.
+
+B4) Abstract & Title Generator
+Generate 5 candidate titles and 3 abstracts (150–200 words) for <VENUE/WORKSHOP>. Each abstract must name the problem, contribution, results w/ deltas, and limitations.
+Inputs: results summary. Output: titles + abstracts.
+
+B5) Paper-to-Blog/Repo Readme
+Translate a paper draft into a blog/README with: problem, method, intuition, results, figures (alt-text), and “reproduce in N steps.”
+Inputs: draft. Output: blog/README.
+
+B6) Reviewer Rebuttal Helper
+Given reviewer comments and my draft rebuttal, rewrite to be crisp, evidence-based, and collegial; propose small additional experiments if feasible.
+Inputs: reviews + rebuttal. Output: improved rebuttal.
+
+SECTION C — OUTREACH (LABS / TEAMS / PIs)
+
+C1) PI/Lab Intro (100–120 words)
+Draft a message to <PI/LAB> about alignment with <AREA>. Reference 1–2 papers of theirs with specific takeaways, link a relevant artifact (code, demo, preprint), and ask one concrete question.
+Inputs: PI bio + my artifact. Output: note + 2 alts.
+
+C2) Industry Research Team Note
+Draft a note to <TEAM> connecting my research to their product or roadmap. Include a metric or ablation that matters to them, and a short “if time allows, I’d try X” idea.
+Inputs: team + artifact. Output: note.
+
+C3) Follow-Up with New Result
+Write a follow-up sharing a small new experiment (e.g., ablation or figure) with 1–2 sentence insight.
+Inputs: prior note + new result. Output: follow-up.
+
+SECTION D — INTERVIEW PRACTICE (RESEARCH)
+
+D1) Research Talk Outline (30–40 min)
+Create a talk outline: problem motivation, method, experiments, results & error analysis, limitations, and future work. Add 3 audience questions to seed discussion.
+Inputs: paper/project. Output: outline.
+
+D2) Deep-Dive Q Bank
+Generate 25 probing questions a research panel might ask (theory, compute budgeting, negative results, ethics), with brief answer skeletons.
+Inputs: area. Output: question bank.
+
+D3) Paper Critique Drill
+Select a recent paper in <AREA> and guide me through a 15-minute critique: problem framing, baselines, ablations, significance, threats to validity, and broader impacts.
+Inputs: area/paper. Output: critique guide.
+
+D4) Whiteboard Math/Derivation
+Create a derivation exercise for <TOPIC> (e.g., ELBO for VAEs, policy gradient, attention complexity). Include steps and common pitfalls.
+Inputs: topic. Output: exercise.
+
+D5) Experiment Design
+Design an experiment plan to test <HYPOTHESIS>, including ablations, controls, failure modes, and a compute-aware schedule.
+Inputs: hypothesis. Output: plan.
+
+D6) Questions to Ask (Research)
+List 18 questions for PI/HM/peer covering research roadmap, publication policy, data access, compute, mentorship, and productization path.
+Inputs: lab/team. Output: list.
+
+D7) Debrief & Next Experiments
+From my mock interview notes, summarize strengths, gaps, and 3 experiments to run in the next 10 days. Include a thank-you email referencing specifics.
+Inputs: notes. Output: plan + email.
+
+SECTION E — ETHICS, DATA, OPEN SCIENCE
+
+E1) Ethics Review
+Scan my project for data licensing, consent, demographic reporting, bias, safety, dual-use risks; propose mitigations and a short disclosure.
+Inputs: project. Output: risk map + disclosure.
+
+E2) Dataset Card / Model Card
+Draft a dataset/model card with intended use, limitations, data sources, license, and known risks.
+Inputs: dataset/model. Output: card text.
+
+E3) Citation & Repro Policy
+Suggest a references section and a reproducibility statement aligned to <VENUE> guidelines.
+Inputs: venue + draft. Output: sections.
+
+SECTION F — OFFERS & NEGOTIATION (RESEARCH)
+
+F1) Research Offer Checklist
+Build a negotiation checklist: title/level, base/bonus/equity, publication policy, authorship/IP, compute budget, conference travel, interns/mentees, service expectations.
+Inputs: priorities. Output: checklist.
+
+F2) Script A (Competitive)
+“I’m excited about the fit. I’m also in process at ~$X base + Y equity with a publication stipend and $Z compute. If we can be competitive at $X and support $Z compute + conferences, I’m ready to sign.”
+Inputs: targets. Output: email + phone scripts.
+
+F3) Script B (Sign-Today)
+“I can sign at $X base, Y equity, $Z compute budget, and conference travel for <venues>. If we can meet that, I’ll accept today.”
+Inputs: targets. Output: scripts.
+
+F4) Academic Offers
+For academic roles: add start-up funds, lab space, teaching load, PhD slots, service expectations. Draft a negotiation script focusing on research runway.
+Inputs: department priorities. Output: script.
+
+SECTION G — CADENCE & SCHOLARLY ANALYTICS
+
+G1) Weekly Plan (research)
+2 paper reads + notes, 1 small experiment/ablation, 1 artifact polish (figure, README), 2 warm outreaches or follow-ups. Provide calendar blocks.
+Inputs: availability. Output: plan.
+
+G2) Citation/Impact Hygiene
+Suggest steps to improve discoverability: arXiv categories, keywords, code repo tags, demo video, social abstract thread.
+Inputs: project. Output: checklist.
+
+PUSH-BACK (RESEARCH)
+- “Ground every claim in evidence; cite or remove.”
+- “Show deltas vs. baselines with confidence intervals.”
+- “Cut adjectives; add ablations and failure analysis.”
+- “Prefer precise terms (variance, seed, FLOPs, token count).”

@@ -1,0 +1,176 @@
+ML Engineer Prompt Bank
+Be the Human AI Can’t Replace — Resume & Interview Kits to Stand Out
+Tailored for: Machine Learning Engineer / ML Platform Engineer / Applied Scientist (Eng-focused)
+
+HOW TO USE
+- Define INPUTS (target role, JD excerpt, stack, infra constraints, your raw bullets, real metrics).
+- Define OUTPUTS (format, word limits, tone, ATS-safe, code or tables allowed).
+- Ask for OPTIONS and rationales; keep facts grounded (“use only numbers I provide”). 
+- Prefer domain language (e.g., “quantization, distillation, LoRA/PEFT, TensorRT-LLM, vLLM, Triton, Ray, Spark, Feast, MLflow/W&B”).
+
+SECTION A — RESUME & ATS (ENGINEERING-FORWARD)
+
+A1) Executive Summary (50–60 words, engineering value)
+You are a hiring manager for <TARGET ROLE> building production ML systems. Create a 3-line summary highlighting: (1) shipped ML to prod, (2) infra expertise (training/serving), (3) a metric (p95 latency, throughput, AUC/F1, cost/$ per 1k tokens), and (4) a collaboration signal. Limit 50–60 words; ATS-safe.
+Inputs: Background bullets, strongest metric, stack. Output: 1 + 2 alternatives.
+
+A2) Skills Section (Grouped)
+Create a grouped skills list prioritized to the JD:
+• Languages: Python, C/C++, SQL, … 
+• Frameworks: PyTorch, TensorFlow, JAX, scikit-learn, XGBoost
+• LLM/Serving: vLLM, TensorRT-LLM, Triton Inference Server, ONNX Runtime
+• Data/Distributed: Spark, Ray, Dask, Kafka
+• MLOps: MLflow, Weights & Biases, Kubeflow, Airflow, Feast (feature store)
+• Cloud/DevOps: AWS/GCP/Azure, Docker, Kubernetes, Terraform
+• Observability: Prometheus, Grafana, OpenTelemetry
+Include only items I actually use; order by JD relevance.
+Inputs: JD excerpt + my stack. Output: plain-text bullets.
+
+A3) Bullet Rewrite (Impact-first, <=26 words)
+Rewrite each bullet with: action verb, what + how (tools), scope (data size/users), stakeholder, result (metric first), <=26 words. Avoid buzzwords; ATS-safe.
+Inputs: Raw bullets + allowed metrics. Output: 3 variants + rationale.
+
+A4) Metric Finder (Prod ML)
+From the project below, propose 12 measurable outcomes split across:
+• Model quality: AUC/F1/ROC-AUC/MAE/MAPE/BLEU/ROUGE/perplexity
+• System: p95/p99 latency, throughput QPS, availability, $/1k req, GPU-hours
+• Product: lift in conversion, retention, CTR, revenue, incidents reduced
+For each metric: quick way to estimate (logs/analytics/ab tests) + data source.
+Inputs: Project description. Output: list.
+
+A5) JD Alignment Map (Skills → Evidence → Gaps → Sprint)
+Extract required skills from the JD and map to my evidence (quote resume). Flag top 3 gaps; propose 1–2 week sprints (e.g., “serve 7B LLM on A10G with vLLM + LoRA adapter, hit p95<70ms at $X/hr”). 
+Inputs: JD + resume. Output: table-like text.
+
+A6) ATS Sanity (Engineer layout)
+Scan resume for ATS risks (columns/tables/images). Provide a plain-text export preserving bullets and **bold** markers. List fixes.
+Inputs: Resume text. Output: fixes + plain-text.
+
+A7) Tone Adjuster (confident, precise)
+Rewrite the summary and 2 bullets to sound precise and stakeholder-aware; keep facts identical. Provide “crisp” and “narrative” versions.
+Inputs: text. Output: 2 variants.
+
+A8) Role Variants
+Tailor my resume for: (1) ML Engineer (product-serving), (2) ML Platform Engineer, (3) Applied Scientist (eng). Reorder bullets by JD relevance; trim to 1 page.
+Inputs: base resume + JD. Output: 3 one-page layouts (text).
+
+SECTION B — PORTFOLIO & PROJECTS (PRODUCTION VALUE)
+
+B1) Weekend Project Generator (shipping bias)
+Propose 6 weekend-size projects that teach high-signal ML eng skills. For each: user, pain, solution, success metric, stack/tools, README outline.
+Seed ideas to consider: 
+• Quantize a 7B LLM and compare p95 latency/cost vs FP16.
+• Build a retrieval-augmented QA with vector DB; measure answer accuracy/cost.
+• Create a drift monitor with Prometheus + Grafana; alert on PSI/KS tests.
+• Feature store demo (Feast) with offline/online parity.
+• Online A/B test harness; define guardrail metrics.
+• GPU autoscaling policy in K8s; cost vs SLO plot.
+Inputs: background + interests. Output: 6 projects.
+
+B2) README Builder (engineering case)
+Write a README with: Problem, Architecture (ascii diagram), Data pipeline, Training config, Serving stack, Benchmarks (table), Cost & SLOs, Run steps, Next.
+Inputs: project details. Output: README text.
+
+B3) Postmortem Template
+Create a postmortem for a prod incident (latency spike, model drift, cost blowout). Include: Impact, Timeline, Root cause, Fix, Prevent, Owners, Follow-ups.
+Inputs: incident notes. Output: postmortem.
+
+B4) Reproducibility Pack
+Generate a checklist: env pinning (conda/poetry), seeds, data versioning (DVC), artifact logging (MLflow/W&B), config files, smoke tests, CI checks.
+Inputs: project. Output: checklist.
+
+B5) Impact Bank (Prod Stories)
+Extract 10 STAR stories focused on shipping, SLOs, cost, reliability, safety. 
+Inputs: resume/projects. Output: story bank.
+
+SECTION C — OUTREACH (TEAM-TARGETED)
+
+C1) Warm Intro (90–110 words)
+Draft a message to <ENGINEERING CONTACT> on <TEAM> about <ROLE>. Include one shipped impact (with metric/SLO), link to a relevant repo/demo, and a specific question about their stack (e.g., serving, evals, data quality). No resume attach.
+Inputs: contact bio + my impact. Output: 1 + 2 alts.
+
+C2) Follow-Up w/ Micro-Ship
+Follow up in 6–8 days referencing a tiny shipped artifact (e.g., Triton config that hit <p95>). 60–80 words.
+Inputs: prior note + micro-ship. Output: follow-up.
+
+C3) Recruiter Note (technical clarity)
+Draft a concise note that translates my experience into role/level terms (prod models, scale, SLOs, team interfaces). 80–100 words.
+Inputs: resume + JD. Output: note.
+
+SECTION D — INTERVIEW PRACTICE (ENGINEERING)
+
+D1) Behavioral (ownership, on-call)
+Create 15 behavioral questions reflecting ML eng realities (incidents, guardrails, rollbacks, cross-team tradeoffs). Provide outline answers.
+Inputs: level. Output: Q&A bank.
+
+D2) ML System Design (Socratic)
+Simulate a system design for <USE CASE> (e.g., real-time recommendations, content moderation, LLM chat). Force clarifications, data/traffic assumptions, back-of-the-envelope capacity, online/offline split, feature store, training/eval loop, canary + rollback, observability, SLOs, and cost. End with a rubric.
+Inputs: use case. Output: interactive drill + rubric.
+
+D3) Coding/Algo (stack-specific)
+Generate 10 problems mixing data structures, streaming, vector search, and simple ML utilities. Provide constraints, example I/O, and hints. After I answer, review complexity and edge cases.
+Inputs: language/stack. Output: problem set + feedback.
+
+D4) Experiment Design & Evals
+Create 8 questions that probe metric choice, offline vs online eval, guardrails (toxicity, bias), and reproducibility. Provide ideal answer outlines.
+Inputs: domain. Output: Q&A.
+
+D5) LLMOps Scenario
+Design a drill to reduce $/1k tokens and p95 latency for a chat system at 500 QPS while preserving quality. Include options (prompt/adapter tuning, caching, routing, quantization), tradeoffs, and a measurement plan.
+Inputs: current metrics. Output: scenario plan.
+
+D6) Questions to Ask (Eng)
+List 15 questions for recruiter/HM/peer covering roadmap, interfaces, SLOs, incident culture, refreshers, growth.
+Inputs: JD/team. Output: questions.
+
+D7) Debrief & Plan
+Summarize strengths/gaps from my mock; propose 3 drills for next week; include a thank-you email referencing specifics.
+Inputs: notes. Output: plan + email.
+
+SECTION E — ETHICS, PRIVACY, SAFETY
+
+E1) Data/Model Ethics Guard
+Scan my case study for licensing, PII, PHI, safety/bias risks. Propose mitigations (redaction, consent, filters, evals). Produce a short disclosure line.
+Inputs: write-up. Output: risk map + disclosure.
+
+E2) Eval & Guardrails
+Given my app, propose safety guardrails and eval suites (toxicity, jailbreak, bias) with thresholds and monitoring.
+Inputs: app context. Output: guardrail plan.
+
+SECTION F — OFFERS & NEGOTIATION (ENG)
+
+F1) Comp Research (leveling)
+Create a checklist to research comp for <ROLE> at level <L> in <GEO>. Include base/bonus/equity bands, refreshers cadence, on-call pay, remote differential.
+Inputs: role/level/geo. Output: checklist + table.
+
+F2) Must-Haves
+Draft my decision doc: must-haves (scope/SLO ownership), nice-to-haves (LLM budget), walk-away, tradeoffs.
+Inputs: priorities. Output: one-pager.
+
+F3) Script A (Competitive)
+Email + phone script: “I’m excited. I’m at ~$X base + Y equity elsewhere; if we can be competitive at $X here, I can sign.”
+Inputs: targets. Output: scripts.
+
+F4) Script B (Sign-Today)
+Email + phone script: “I can sign at $X base, Y equity, Z sign-on.”
+Inputs: targets. Output: scripts.
+
+F5) Equity/Compute Extras
+Explain equity (RSU/ISO/NSO), refreshers, and request areas (compute stipend, conference travel, education budget).
+Inputs: offer. Output: explainer + requests.
+
+SECTION G — CADENCE & ANALYTICS
+
+G1) Weekly Plan
+3 tailored applications; 1 micro-ship; 60–90 min practice; 3 warm outreaches + 3 follow-ups. Provide calendar blocks.
+Inputs: availability. Output: plan.
+
+G2) Tracker & Drop-Off
+Compute conversion rates; propose 3 experiments to fix the weakest stage (e.g., resume variants, outreach change, project emphasis).
+Inputs: tracker. Output: analysis.
+
+PUSH-BACK (ENG)
+- “Use only my provided metrics; do not invent.”
+- “Compress to ≤20 words; put metric first.”
+- “Rephrase with domain terms (quantization, distillation, caching).”
+- “Explain tradeoffs and SLO impact in 2 bullets.”
