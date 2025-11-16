@@ -1,0 +1,131 @@
+PORTFOLIO CHECKLIST (ML Engineer / AI Researcher Friendly)
+Updated: 2025-11-16
+
+Use this as a punchy, 1-page-ish checklist before you send a portfolio/repo to a recruiter, hiring manager, or PI.
+
+===============================================================================
+0) QUICK SIGNALS (PASS/FAIL IN 30 SECONDS)
+[ ] Impact first in the README tagline (who/why/result) — one sentence
+[ ] Demo link or GIF visible above the fold
+[ ] At least one metric that matters (quality OR latency/throughput OR cost)
+[ ] “What changed because YOU were there” is explicit in 1–2 bullets
+
+===============================================================================
+1) REPO & STRUCTURE
+[ ] Clear, consistent repo name (kebab/snake case; no “final_v3_really”)
+[ ] Standard folders: configs/, data/ (DVC pointers only), docs/, notebooks/, scripts/, src/, tests/
+[ ] requirements.txt or pyproject.toml is current; lock/pinning captured
+[ ] .gitignore excludes data/secrets; .gitattributes if using LFS
+[ ] License file present (MIT/Apache-2.0/Proprietary/etc.)
+
+===============================================================================
+2) README ESSENTIALS (OUTCOME-FIRST)
+[ ] TL;DR: problem → approach → measurable outcome (≤ 3 sentences)
+[ ] Quick Facts table: stack, data size/source/licensing, model, SLOs, business metric
+[ ] Architecture diagram (ascii or image) + 3–5 key design decisions
+[ ] “How to Run” works on a clean machine (setup, data, train/eval, serve, try-it curl)
+[ ] Impact & Results section with numbers + a short stakeholder quote
+
+===============================================================================
+3) EVIDENCE & RESULTS
+[ ] Baseline vs. current results table (quality, latency p95/p99, cost/1k)
+[ ] Error analysis: 3–5 failure cases with short notes
+[ ] Ablations: 2–3 knobs moved (e.g., chunk size, k, quant level) and effect
+[ ] Screenshots or dashboards for observability (if applicable)
+
+===============================================================================
+4) DEMO & UX
+[ ] Live demo URL or recorded GIF/video (≤ 90s); remove if N/A
+[ ] Simple input examples; copy-paste curl or notebook cell
+[ ] Clear “limits” note so expectations are set
+
+===============================================================================
+5) DATA & ETHICS
+[ ] Data sources and licenses listed; sensitive data removed/redacted
+[ ] Dataset card (intended use, collection, limits, known biases)
+[ ] Privacy note (PII/PHI handling); consent documented if needed
+[ ] Repro data versioning (DVC/LakeFS/git‑lfs) and split policy (leakage checks)
+
+===============================================================================
+6) MODELS & METHODS
+[ ] Baselines named + why chosen
+[ ] Current method documented (architecture, adapters/quantization, prompts)
+[ ] Training config: optimizer, schedule, batch size, context length
+[ ] Repro details: seeds, env pinning, deterministic flags
+
+===============================================================================
+7) EVALUATION
+[ ] Task-appropriate metrics (AUC/F1/MAE/BLEU/ROUGE/BERTScore/MMLU/etc.)
+[ ] Offline eval protocol and (if applicable) online A/B or interleaving
+[ ] Guardrail evals (toxicity, jailbreak, bias) with thresholds
+[ ] Confidence intervals or variance (multiple seeds) for key metrics
+
+===============================================================================
+8) RELIABILITY, OBSERVABILITY & COST (IF SERVING)
+[ ] SLOs stated (p95/p99, availability); canary + rollback plan
+[ ] Monitoring/alerts noted (Prometheus/Grafana/OpenTelemetry)
+[ ] Cost awareness: GPU hours; $/1k requests; caching/routing/quant wins
+[ ] On-call/incident notes (if this ran in prod or a mock incident)
+
+===============================================================================
+9) REPRODUCIBILITY
+[ ] One-command setup (Makefile/justfile or documented shell block)
+[ ] Env pinning (conda/poetry); exact versions for CUDA/cuDNN if GPU
+[ ] Seeds + data versions produce similar results (tolerance documented)
+[ ] CI smoke tests or a simple test script runs
+
+===============================================================================
+10) CASE STUDY / WEBSITE
+[ ] One-page case write-up: Problem → Approach → Results → Your Role → Next
+[ ] Visuals: 1 figure or table that carries the story
+[ ] Link to repo/notebook/demo is obvious
+[ ] “What I’d do with more time” lists concrete next experiments
+
+===============================================================================
+11) DISCOVERABILITY & CREDIBILITY
+[ ] Google Scholar/ORCID profiles cleaned and linked (if research-facing)
+[ ] arXiv/preprint links (if appropriate); correct author name variants
+[ ] Repo tags, keywords, README social preview image set
+[ ] Citations to key prior work included in README or docs
+
+===============================================================================
+12) OUTREACH-READY ASSETS
+[ ] 90–100 word outreach blurb (impact + 1 question) ready
+[ ] 3-sentence “walkthrough” for screen-share intros
+[ ] 30–45s STAR story bullet points
+[ ] Screenshot or short clip thumbnail
+
+===============================================================================
+13) SECURITY & IP
+[ ] No API keys or secrets in repo; use .env + example.env
+[ ] No proprietary data or code shared without permission
+[ ] License and third-party licenses compatible and cited
+
+===============================================================================
+14) MAINTENANCE & ROADMAP
+[ ] Changelog with dates (v1.0 public / v0.x internal)
+[ ] 3–5 roadmap items; priorities and rough scope
+[ ] Open issues labeled “good first issue” if you welcome contributions
+
+===============================================================================
+15) QUALITY BAR (SELF-REVIEW)
+[ ] 30-second skim test: can someone get the headline result?
+[ ] 5-minute deep-dive test: can they reproduce locally or in Colab?
+[ ] Peer review done (friend/mentor ran the steps)
+[ ] Typos/formatting fixed; consistent terminology
+
+===============================================================================
+16) WEEKLY REFRESH CADENCE
+[ ] Update 1 metric or add 1 small ablation
+[ ] Ship 1 documentation improvement (GIF, figure, table)
+[ ] Share 2 warm outreaches (alumni/peer/PI/engineer) + 2 follow-ups
+[ ] Log learnings in the README “Lessons Learned” section
+
+===============================================================================
+APPENDIX — TEMPLATES TO USE
+- README pattern: use the outcome-first template (Problem → Approach → Results)
+- Case study one-pager: Problem • Users • Solution • Data/Methods • Eval • SLO/Cost • Impact • Next • Ethics
+- Dataset/Model cards: intended use, limitations, risks, license
+- STAR stories: 10 “impact bank” entries for interviews
+
+Pro tip: If a stranger can reproduce a result and explain why it matters after 5 minutes in your repo, your portfolio is doing real work for you.

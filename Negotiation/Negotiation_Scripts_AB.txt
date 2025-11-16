@@ -1,0 +1,121 @@
+NEGOTIATION SCRIPTS (A/B)
+Be the Human AI Can’t Replace — Offer Negotiation Kit
+Updated: 2025-11-16
+
+Read me first:
+- Pick ONE path per negotiation (A or B). Do not mix.
+- Be brief, kind, and consistent. Then stop talking and let them respond.
+- Replace bracketed placeholders <> with your details. Numbers are examples.
+
+──────────────────────────────────────────────────────────────────────────────
+PREP CHECKLIST (1–2 MIN)
+[ ] My must‑haves (role/scope, base, equity, sign‑on, location, hybrid/remote)
+[ ] Nice‑to‑haves (bonus %, refreshers cadence, level/title, start date)
+[ ] Research notes (typical band for level/geo; realistic targets)
+[ ] Talking points (2–3 sentences max); choose Path A or Path B
+
+If Research‑leaning: add [ ] publication policy [ ] compute budget [ ] conference travel [ ] IP/authorship
+
+──────────────────────────────────────────────────────────────────────────────
+PATH A — COMPETITIVE PRESSURE (use when you truly have other traction)
+
+EMAIL VARIANT 1 (crisp)
+Subject: Offer for <Role> — compensation alignment
+Hi <Name>, I’m excited about the <Role> and team. I’m also further along with another process at ~<${X} base> + <{Y} equity> + <{Z} sign‑on>. 
+If we can be competitive around <${X} base> and <{Y} equity> here, I’m ready to move forward.
+Thanks for considering — I’m enthusiastic about making this work.
+<Your Name>
+
+EMAIL VARIANT 2 (friendly)
+Subject: Offer details — quick alignment
+Hi <Name>, thank you again for the offer and the great conversations with <teams>. I’m at a similar stage elsewhere at ~<${X} base> + <{Y} equity>. 
+If we can align near <${X} base> with equity in that range, I can commit here. Happy to chat live if easier.
+Best, <Your Name>
+
+ENGINEERING/RESEARCH ADD‑ONS (include only if relevant)
+“I’m also comparing compute and growth support. If we can include <compute budget ${C}/year> and <conference travel for VENUES>, that would close the gap for me.”
+
+PHONE / ZOOM TALK TRACK (≈30–60s)
+“Thanks again — I’m excited about <Role>. I do have another process at roughly <${X} base> and <{Y} equity>. If we can be competitive at <${X}> base here with equity in that range, I’m ready to sign. How does that look on your end?”
+→ PAUSE.
+
+IF THEY ASK FOR PROOF
+“I’m happy to share ranges verbally. If you need documentation, I can provide a redacted letter once we’re close.”
+
+IF THEY COUNTER BELOW YOUR TARGET
+“Thanks for working on this. If base can’t reach <${X}>, could we do <higher sign‑on>/<equity refreshers timing>/<level review at 6 months> to bridge the gap?”
+
+IF THEY ASK YOU TO NAME A NUMBER
+“My understanding of the band for <Level> in <Geo> is <${band_low}–${band_high}>. Given my experience shipping <impact>, I’m targeting <${X}> base with equity at <{Y}>. If we can get there, I’m ready to accept.”
+
+CLOSE (commit when aligned)
+“Great — if you can confirm <terms> in the written offer, I’m ready to sign.”
+
+Do NOT mix with Path B phrasing like “I’ll sign today at…”
+
+──────────────────────────────────────────────────────────────────────────────
+PATH B — SIGN‑TODAY CLARITY (use when you know your number and will commit)
+
+EMAIL VARIANT 1 (crisp)
+Subject: Offer for <Role> — ready to accept at <terms>
+Hi <Name>, I’m excited about the <Role>. I can accept today at <${X} base>, <{Y} equity>, and <${Z} sign‑on> with a <remote/hybrid> arrangement. 
+If we can confirm those terms, I’ll sign immediately.
+Thank you, <Your Name>
+
+EMAIL VARIANT 2 (with rationale)
+Subject: Offer terms for <Role>
+Hi <Name>, based on the scope and impact we discussed (owning <X> SLOs / publishing at <venues>), I’m ready to sign at <${X} base>, <{Y} equity>, and <${Z} sign‑on>. 
+If we can meet that, I’ll accept today.
+Best, <Your Name>
+
+ENGINEERING/RESEARCH ADD‑ONS (optional lines; include only what you need)
+• “Annual compute budget of <${C}>, publication support, and conference travel for <venues>.”
+• “Level <L> with compensation review in 6 months tied to <milestone>.”
+
+PHONE / ZOOM TALK TRACK (≈20–40s)
+“I’m excited about the role. I’m ready to sign at <${X} base>, <{Y} equity>, and <${Z} sign‑on>. If we can confirm those terms, I’ll accept today.”
+→ PAUSE.
+
+IF THEY CAN’T MEET IT
+“I understand. If <${X}> base isn’t possible, the alternate path that works for me is <keep base at $B, increase sign‑on to $Z2, and confirm equity at Y>. If that’s doable, I can still accept today.”
+
+CLOSE
+“Perfect — please send the updated offer and I’ll countersign.”
+
+Do NOT mention competing offers or ranges in Path B.
+
+──────────────────────────────────────────────────────────────────────────────
+FOLLOW‑UPS & EDGE CASES
+
+IF THEY ASK FOR YOUR CURRENT/PAST COMP
+“I focus on the value and scope of the new role rather than past comp. Based on market data and my impact, the package I outlined is fair for <Level/Geo>.”
+
+IF THEY PRESS FOR “LOWEST YOU’LL TAKE”
+“I prefer to work toward the package that sets us both up for success. The terms I shared are what I’m ready to accept today.”
+
+IF TIMING IS THE ISSUE (EXPIRING OFFER)
+“I can extend courtesy time to <date> if helpful, but I’d appreciate clarity by then. If we can meet the terms, I’ll sign immediately.”
+
+IF YOU NEED NON‑CASH ELEMENTS
+“Two non‑cash items matter for me: <remote/hybrid> and <title/level aligned to scope>. If those are set, I can be flexible on <bonus/sign‑on> within reason.”
+
+RESEARCH‑SPECIFIC (publication/IP)
+“I’d like written confirmation that I can publish with team approval and open‑source non‑proprietary components. Authorship should reflect contributions; happy to follow team policy.”
+
+──────────────────────────────────────────────────────────────────────────────
+SHORT TEXT / SLACK SNIPPETS (use sparingly; follow with email)
+
+PATH A (DM)
+“Hi <Name> — excited about <Role>. I’m at ~<${X} base> + <{Y} equity> elsewhere. If we can align around those numbers, I can commit here. Can we discuss?”
+
+PATH B (DM)
+“Hi <Name> — I’m ready to sign at <${X} base>, <{Y} equity>, <${Z} sign‑on>. If that works, I’ll accept today. Let me know and I’ll watch for the update.”
+
+──────────────────────────────────────────────────────────────────────────────
+WHAT NOT TO DO
+- Don’t mix Path A and Path B in the same thread.
+- Don’t over‑explain. One or two sentences is plenty.
+- Don’t go more than 1–2 rounds. Protect momentum and relationships.
+- Don’t bluff about offers you don’t have.
+
+Reminder: discuss tax/equity implications with a professional. You control accuracy; be honest.
