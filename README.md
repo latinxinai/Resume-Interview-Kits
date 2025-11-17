@@ -21,7 +21,7 @@ This repository collects practical, AI-powered resources to craft impact-first r
   - → [`/prompt-bank/`](./prompt-bank/)
 - **ATS-Clean Resume Template (Overleaf/PDF)** — parser-friendly format; bolds impact  
   - → [`/resume/ATS_Resume_Template.pdf`](./resume/ATS_Resume_Template.pdf)  
-  - (Optional) `overleaf_link.txt` with your live template URL
+  - (Overleaf) [overleaf_link.txt](https://www.overleaf.com/read/zmwymdhrzkxs#c0f233) 
 - **Portfolio Kit** — **Checklist** + **README template** + **1-page Case Study**  
   - → [`/portfolio/Portfolio_Checklist.txt`](./portfolio/Portfolio_Checklist.txt)  
   - → [`/portfolio/Portfolio_README_Template.md`](./portfolio/Portfolio_README_Template.md)  
